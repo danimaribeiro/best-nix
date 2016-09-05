@@ -97,7 +97,8 @@ void printch(char c)
 void print(string str)
 {
     uint16 i =0;
-    for(i;i<strlen(str);i++)
+    uint16 length = strlen(str);
+    for(i;i<length-1;i++)
     {
         printch(str[i]);
     }
